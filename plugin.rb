@@ -12,7 +12,7 @@ enabled_site_setting :enable_discord_logins
 
 class OmniAuth::Strategies::Discord < OmniAuth::Strategies::OAuth2
   option :name, 'discord'
-  option :scope, 'identify email guilds'
+  option :scope, 'identify email guilds guilds.members.read'
 
   option :client_options,
           site: 'https://discordapp.com/api',
