@@ -8,7 +8,7 @@
 
   class DiscordStrategy < OmniAuth::Strategies::OAuth2
     option :name, "discord"
-    option :scope, "identify email guilds"
+    option :scope, "identify email guilds guilds.members.read"
 
     option :client_options,
            site: "https://discord.com/api",
