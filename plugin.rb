@@ -3,10 +3,10 @@
 # name: discourse-plugin-discord-auth
 # about: Enable Login via Discord
 # version: 0.1.3
-# authors: Jeff Wong, Robert Barrow (Edited by AEW745
+# authors: Jeff Wong, Robert Barrow (Edited by AEW745)
 # url: https://github.com/AEW745/discourse-plugin-discord-auth
 
-  class DiscordStrategy < OmniAuth::Strategies::OAuth2
+  class Auth::DiscordAuthenticator < Auth::ManagedAuthenticator
     option :name, "discord"
     option :scope, "identify email guilds guilds.members.read"
 
