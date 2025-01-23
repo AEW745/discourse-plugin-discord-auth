@@ -41,7 +41,6 @@
     def callback_url
       full_host + script_name + callback_path
     end
-  end
 
   def name
     "discord"
@@ -83,3 +82,4 @@
   def primary_email_verified?(auth_token)
     true
   end
+end
